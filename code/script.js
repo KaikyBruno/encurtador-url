@@ -1,7 +1,7 @@
 function encurtar () {
     let url = document.getElementById ('url').value
     if (!url) {
-        window.alert ('É preciso inserir uma URL para encurtar')
+        window.alert ('É preciso inserir uma URL para encurtar.')
         return 
     }
 
@@ -30,6 +30,12 @@ function encurtar () {
 }
 
 function copiar () {
+    let url = document.getElementById ('url').value
+    if (!url) {
+        window.alert ('Não tem nada para copiar!')
+        return 
+    }
+
     let inputurl = document.getElementById ('url')
 
     inputurl.select ()
